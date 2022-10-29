@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@300&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url("../fontawesome-free-6.2.0-web/css/all.css");
+
+body{
+    color: #543522;
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+}
+
+.apresentacao {
+    background-color: #e59099;
+    color: #543522;
+    text-align: center;
+    padding: 10% 10% 5% 10%;
+}
+
+.apresentacao h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+}
+
+.apresentacao p{
+    font-size: 2em;
+}
+
+.avatar {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: #543522 solid 8px;
+    float: right;
+    margin-top: -200px;
+    position: relative;
+}
+
+.estetoscopio{
+    width: 450px;
+    left: 65%;
+    top: 450px;
+    z-index: 2;
+    position: absolute;
+    mix-blend-mode: multiply;
+}
+
+.apresentacao-conteudo {
+    font-family: 'Nunito', sans-serif;
+    padding: 5%;
+    background-color: #e4d8ca;
+    border-radius: 20px;
+}
+
+.quem-sou{
+    background-color: white;
+    padding: 4%;
+    display: flex;
+}
+
+.quem-sou-img{
+    align-items: center;
+    width: 15%;
+    height: auto;
+    float: left;
+}
+
+.quem-sou-img img{
+    border-radius: 50%;
+    width: 100%;
+    float: right;
+    margin-right: 20px;
+}
+
+.quem-sou-texto{
+    width: 85%;
+    height: auto;
+    float: left;
+    font-size: 2em;
+}
+
+.ajudar{
+    padding: 2% 0 2% 0;
+    background-color: #e59099;
+    /*height: 900px !important;*/
+}
+
+.ajudar-titulo{
+    text-align: center;
+    font-size: 3em;
+}
+
+.linha{
+    width: 100%;
+    display: flex;
+}
+
+.coluna {
+    flex: 1;
+    float: left;
+    width: 27%;
+    margin-bottom: 16px;
+    padding: 0 3%;
+  }
+  
+  .card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 1.5em;
+    min-height: 100%;
+    display: grid;
+  }
+
+  .card img{
+    width: 100%;
+  }
+
+  .card ul{
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .title {
+    color: #745542;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #543522;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.5em;
+    bottom: 0;
+  }
+  
+  .button:hover {
+    background-color: #775a47;
+  }
+
+  footer{
+    bottom: 0;
+    margin-top: 5px;
+    background-color: white;
+  }
+
+  .footer-img{
+    float: left;
+    width: 33%;
+    left: 0;
+    position: absolute;
+  }
+
+  .footer-img img{
+    float: right;
+  }
+
+  .footer-texto{
+    float: right;
+    width: 66%;
+    font-size: 2em;
+  }
+
+  #snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #543522; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+  @media screen and (max-width: 650px) {
+    .linha{
+      display: block;
+    }
+    
+    .coluna {
+      width: 95%;
+      flex: none;
+      float: none;
+    }
+
+    .card{
+      width: 100% !important;
+    }
+
+    .apresentacao h1{
+      display: block;
+    }
+
+    .avatar{
+      margin-top: 0;
+    }
+
+    .apresentacao-conteudo{
+      margin-top: 200px;
+      padding-top: 200px;
+    }
+
+    .quem-sou-img, .quem-sou-texto{
+      width: 100%;
+      float: none;
+    }
+
+    .quem-sou-img img{
+      width: 50%;
+    }
+
+    .footer{
+      display: block ruby;
+    }
+
+    .footer-img, .footer-texto{
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+
+    .footer-img img{
+      width: 100%;
+      float: none;
+    }
+  }
