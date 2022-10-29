@@ -64,7 +64,7 @@ body{
     float: left;
 }
 
-.quem-sou-img img{
+.quem-sou-img img, i{
     border-radius: 50%;
     width: 100%;
     float: right;
